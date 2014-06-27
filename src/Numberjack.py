@@ -894,6 +894,8 @@ class Model(object):
 # instead of integer values when specifying the domain of the variable.
 
 class Variable(Expression):
+    
+    num_instances = 0 # Keeps track of the number of Variable class instances - used to name unnamed instances.
 
     def __init__(self, argopt1=None, argopt2=None, argopt3=None):
         '''
@@ -910,7 +912,8 @@ class Variable(Expression):
         domain = None
         lb = 0
         ub = 1
-        name = 'x'
+        name = 'v' + str(Variable.num_instances)
+        Variable.num_instances += 1
 
         if argopt3 is not None:
             lb = argopt1
@@ -1035,6 +1038,8 @@ def Variable(argopt1=None, argopt2=None, argopt3=None):
 #    X <= Y returns a LeqLex Constraint between X and Y
 #
 class VarArray(list):
+    
+    num_instances = 0 # Keeps track of the number of VarArray class instances - used to name unnamed instances.
 
     def __init__(self, n, optarg1=None, optarg2=None, optarg3=None):
         domain = None
@@ -1044,7 +1049,9 @@ class VarArray(list):
         else:
             lb = 0
             ub = 1
-            name = 'x'
+            name = 'a' + str(VarArray.num_instances)
+            VarArray.num_instances += 1
+            
             if optarg1 is not None:
                 #if hasattr(optarg1, '__iter__'):
                 if type(optarg1) is str:
@@ -1066,7 +1073,7 @@ class VarArray(list):
                         name = optarg2
         names = name
         if type(name) is str:
-            names = [name + str(i) for i in range(n)]
+            names = [name + '[' + str(i) + ']' for i in range(n)]
         if domain is None:
             self.__init__([Variable(lb, ub, names[i]) for i in range(n)])
         else:
@@ -1182,13 +1189,16 @@ class VarArray(list):
 #
 #    Matrices support Element constraints on row, column or flatten views.
 class Matrix(list):
-
+    
+    num_instances = 0 # Keeps track of the number of Matrix class instances - used to name unnamed instances.
+    
     def __init__(self, optarg1=None, optarg2=None, optarg3=None, optarg4=None, optarg5=None):
         n = 1
         m = 1
         lb = 0
         ub = 1
-        name = 'x'
+        name = 'm' + str(Matrix.num_instances)
+        Matrix.num_instances += 1
 
         self.row = None   # accessor to the list of rows
         self.col = None   # accessor to the list of columns
@@ -1221,7 +1231,7 @@ class Matrix(list):
                     name = optarg3
                 else:
                     ub = optarg3 - 1
-            list.__init__(self, [VarArray(m, lb, ub, name + str(j) + '.') for j in range(n)])
+            list.__init__(self, [VarArray(m, lb, ub, name + '[' + str(j) + ']') for j in range(n)])
         self.row = self
         self.col = Matrix()
         for column in zip(*self):
