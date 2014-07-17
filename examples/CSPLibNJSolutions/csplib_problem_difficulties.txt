@@ -1,0 +1,107 @@
+CSPLib problems: http://www.csplib.org/Problems/
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Format:
+=======
+[Done?][#] : [Name] - [Difficulty]
+
+Where:
+- [Done?] takes a value of 'N' if the solution is not yet finished, or 'Y' if it is.
+- [#] is the number of the problem.
+- [Name] is the title of the problem.
+- [Difficulty] is one of "Easy", "Moderate" or "Difficult", based on the impression the problem gave me.
+
+Examples:
+============
+N001 : Car Sequencing - Diffculty
+Problem 001 is called Car Sequencing. I deemed it to be a difficult. Its solution is not yet finished.
+
+Y007 : All-Interval Series - Easy
+Problem 007 is called All-Interval Series. I deemed it to be an easy problem. Its solution is finished.
+
+--
+
+Problems list:
+=-=-=-=-=-=-=-=
+N001 : Car Sequencing - Diffcult
+N002 : Template Design - Moderate
+N003 : Quasigroup Existence - Difficult
+N004 : Mystery Shopper - Difficult
+N005 : Low autocorrelation binary sequences - Difficult
+Y006 : Golomb rulers - Easy
+Y007 : All-Interval Series - Easy
+N008 : Vessel Loading - Difficult
+N009 : Perfect Square Placement - Moderate
+N010 : Social Golfer Problem - Difficult
+N011 : ACC Basketball Schedule - Difficult
+N012 : Nonogram - Moderate
+N013 : Progressive Party Problem - Difficult
+N014 : Solitaire Battleships - Moderate
+Y015 : Schur's Lemma - Easy
+N016 : Traffic Lights - Difficult
+N017 : Ramsey Numbers - Difficult
+N018 : Water Bucket Problem - Moderate
+N019 : Magic Squares and Sequences - Difficult
+N020 : Darts Tournament - Moderate
+N021 : Crossfigures - Moderate
+N022 : Bus Driver Scheduling - Difficult
+Y023 : Magic Hexagon - Easy
+Y024 : Langford's Number Problem - Easy
+N025 : Lam's Problem - Easy
+N026 : Sports Tournament Scheduling - Difficult
+N027 : Alien Tiles Problem - Difficult
+N028 : Balanced Incomplete Block Designs - Moderate
+N029 : Prime queen attacking Problem - Difficult
+N030 : Balanced Academic Curriculum Problem (BACP) - Difficult
+N031 : Rack Configuration Problem - Moderate
+N032 : Maximum Density Still Life - Difficult 
+N033 : Word Design for DNA Computing on Surfaces - Moderate
+N034 : Warehouse Location Problem - Moderate
+N035 : Molnar's Problem - Difficult
+N036 : Fixed Length Error Correcting Codes - Moderate
+N037 : Peg Solitaire - Difficult
+N038 : Steel Mill Slab Design - Difficult
+N039 : The Rehearsal Problem - Difficult
+N040 : A Distribution Problem with Wagner-Whitin Costs - Difficult
+Y041 : The n-Fractions Puzzle - Easy
+N042 : Diagnosis - Difficult
+N043 : Differential Diagnosis - Difficult
+N044 : Steiner triple systems - Moderate
+N045 : The Covering Array Problem - Difficult
+N046 : Meeting Scheduling - Difficult
+N047 : Supply Chain Coordinations - Difficult
+N048 : Minimum Energy Broadcast (MEB) - Difficult
+Y049 : Number Partitioning - Easy
+N050 : Diamond-free Degree Sequences - Moderate
+N051 : Tank Allocation - Difficult
+N052 : Extremal Graphs with Small Girth - Difficult
+Y054 : N-Queens - Easy
+N055 : Equidistant Frequency Permutation Arrays - Moderate
+N056 : Synchronous Optical Networking (SONET) Problem - Moderate
+Y057 : Killer Sudoku - Easy
+
+--
+
+Difficulty groups:
+=-=-=-=-=-=-=-=-=-=
+
+Easy:
+=====
+006 Done
+007 Done
+015 Done
+023 Done
+024 Done
+025 In-progress
+041 Done
+049 Done
+054 Done
+057 Done
+
+Moderate:
+=========
+None started yet.
+
+Difficult:
+==========
+None started yet.
