@@ -47,7 +47,7 @@ N021 : Crossfigures - Moderate
 N022 : Bus Driver Scheduling - Difficult
 Y023 : Magic Hexagon - Easy
 Y024 : Langford's Number Problem - Easy
-N025 : Lam's Problem - Easy
+Y025 : Lam's Problem - Easy
 N026 : Sports Tournament Scheduling - Difficult
 N027 : Alien Tiles Problem - Difficult
 N028 : Balanced Incomplete Block Designs - Moderate
@@ -62,7 +62,7 @@ N036 : Fixed Length Error Correcting Codes - Moderate
 N037 : Peg Solitaire - Difficult
 N038 : Steel Mill Slab Design - Difficult
 N039 : The Rehearsal Problem - Difficult
-N040 : A Distribution Problem with Wagner-Whitin Costs - Difficult
+N040 : A Distribution Problem with Wagner-Whitin Costs  - Difficult
 Y041 : The n-Fractions Puzzle - Easy
 N042 : Diagnosis - Difficult
 N043 : Differential Diagnosis - Difficult
@@ -92,7 +92,7 @@ Easy:
 015 Done
 023 Done
 024 Done
-025 In-progress
+025 Done
 041 Done
 049 Done
 054 Done
@@ -100,7 +100,22 @@ Easy:
 
 Moderate:
 =========
-None started yet.
+002 Not started
+009 Not started
+012 In-progress
+014 Not started
+018 Not started
+020 Not started
+021 In-progress
+028 Not started
+031 Not started
+033 Not started
+034 Not started
+036 Not started
+044 Not started
+050 Not started
+055 Not started
+056 Not started
 
 Difficult:
 ==========
