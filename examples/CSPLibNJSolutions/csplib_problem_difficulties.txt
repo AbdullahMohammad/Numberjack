@@ -112,9 +112,9 @@ Moderate:
 033 Not started
 034 Not started
 036 Not started
-044 Not started
-050 Not started
-055 Not started
+044 In-progress
+050 Done
+055 In-progress
 056 Not started
 
 Difficult:

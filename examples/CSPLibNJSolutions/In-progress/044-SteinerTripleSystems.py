@@ -1,3 +1,5 @@
+# Unsatisfiable for some reason.
+
 # Steiner Triple Systems
 
 # Find a set of n(n-1)/6 triples of distinct integer elements in {1,...,n} such that any two triples have at most one common element.
@@ -14,8 +16,8 @@ def get_model(N):
     model = Model([Sum(row) == 3 for row in sol.row])
         
     for i in range(N_ROWS):
-        for j in range(i, N_ROWS):
-                model += Sum([sol[i][k] == 1 and sol[j][k] == 1 for k in range(N)]) <= 1
+        for j in range(i + 1, N_ROWS):
+                model += Sum([sol[i][k] == 1 & sol[j][k] == 1 for k in range(N)]) <= 1
     
     return sol, model
 

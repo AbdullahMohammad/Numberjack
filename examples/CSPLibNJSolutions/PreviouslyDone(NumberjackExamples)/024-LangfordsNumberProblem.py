@@ -16,7 +16,7 @@ def get_model(K, N):
                     AllDiff(seq.flat),
     
                     # Each number m has to be m positions from its next occurence
-                    [[abs(seq[m][i].get_value() - seq[m][i].get_value()) == m+1 for i in range(K)] for m in range(N)])
+                    [[Abs(seq[m][i] - seq[m][i]) == m+1 for i in range(K)] for m in range(N)])
     
     return seq, model
 

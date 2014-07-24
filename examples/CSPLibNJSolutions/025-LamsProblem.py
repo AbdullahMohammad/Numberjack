@@ -14,10 +14,10 @@ def get_model(N):
 
     model = Model(
                     # Each row must contain 11 zeroes (rest of the 100 are 1s).
-                    Sum([row for row in matrix.row]) == 100,
+                    [Sum(row) == 100 for row in matrix.row],
                     
                     # Each column must contain 11 zeroes (rest of the 100 are 1s).
-                    Sum([col for col in matrix.col]) == 100,
+                    [Sum(col) == 100 for col in matrix.col],
                     
                     # Each pair of rows must have exactly one zero in the same column.
                     [[[Sum([matrix[row1][col], matrix[row2][col]]) == 1 for col in range(N)] for row2 in range(row1 + 1, N)] for row1 in range(N)])    

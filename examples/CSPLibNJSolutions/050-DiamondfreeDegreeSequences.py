@@ -35,9 +35,9 @@ def get_model(N):
 
     # Every grouping of 4 rows can have at most a sum of 4 between them.
     for a in range(N):
-        for b in range(a, N):
-            for c in range(b, N):
-                for d in range(c, N):
+        for b in range(a + 1, N):
+            for c in range(b + 1, N):
+                for d in range(c + 1, N):
                     model += Sum(
                         [matrix[a][b], matrix[a][c], matrix[a][d],
                         matrix[b][c], matrix[b][d],
@@ -60,13 +60,13 @@ def solve(param):
         
         print "Degree sequence:",
         for row in matrix:
-            print sum(matrix),
+            print sum([x.get_value() for x in row]),
     elif solver.is_unsat():
         print "Unsatisfiable"
     else:
         print "Timed out"
         
 if __name__ == '__main__':
-    default = {'N': 10, 'solver': 'Mistral', 'verbose': 1}
+    default = {'N': 10, 'solver': 'MiniSat', 'verbose': 1}
     param = input(default)
     solve(param)
