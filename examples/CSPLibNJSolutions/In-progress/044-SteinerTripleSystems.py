@@ -11,33 +11,37 @@ from Numberjack import *
 def get_model(N):
     N_ROWS = N * (N - 1) / 6
     
-    sol = Matrix(N_ROWS, N, 0, 1)
+    triples = Matrix(N_ROWS, N, 0, 1)
 
-    model = Model([Sum(row) == 3 for row in sol.row])
+    model = Model([Sum(row) == 3 for row in triples.row])
         
     for i in range(N_ROWS):
         for j in range(i + 1, N_ROWS):
-                model += Sum([sol[i][k] == 1 & sol[j][k] == 1 for k in range(N)]) <= 1
+                model += Sum([triples[i][k] == triples[j][k] for k in range(N) if triples[i][k] == 1]) <= 1
     
-    return sol, model
+    return triples, model
 
 def solve(param):
     N = param['N']
 
-    sol, model = get_model(N)
+    triples, model = get_model(N)
 
     solver = model.load(param['solver'])
     solver.setVerbosity(param['verbose'])
     solver.solve()
 
     if solver.is_sat():
-        print str(sol)
+        for triple in triples:
+            for i in range(N):
+                if triple[i] == 1:
+                    print (i + 1),
+        print
     elif solver.is_unsat():
         print "Unsatisfiable"
     else:
         print "Timed out"
         
 if __name__ == '__main__':
-    default = {'N': 7, 'solver': 'Mistral', 'verbose': 1}
+    default = {'N': 7, 'solver': 'MiniSat', 'verbose': 1}
     param = input(default)
     solve(param)

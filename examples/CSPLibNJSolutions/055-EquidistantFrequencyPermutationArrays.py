@@ -10,26 +10,22 @@ from Numberjack import *
 
 def get_model(V, Q, N, D):
     # By definition a and b will have the same cardinality:
-    matrix = Matrix(V, Q*N, 1, Q)
+    matrix = Matrix(V, Q*N, 0, Q-1)
 
     cards = {}
     
     # Setting up the Gcc for the first constraint.
-    for i in range(1, Q + 1):
-        cards[i] = N
+    for i in range(0, Q):
+        cards[i] = (N, N)
     
     model = Model(
                     # Each sequence must contain each symbol n times.
                     [Gcc(matrix.row[i], cards) for i in range(V)])    
-                    
-    for i in range(N):
-        for j in range(i, N):
-            # One way to represent the Hamming distance would be to find
-            # the sum of the absolute differences of each pair of corresponding
-            # elements for that pair of rows.
-            model += Sum([abs(matrix[i][k] - matrix[j][k]) for k in range(Q*N)])
-            
-
+    
+    for i in range(V):
+        for j in range(i + 1, V):
+                model += Sum([matrix[i][k] != matrix[j][k] for k in range(Q*N)]) == D
+                                
     return matrix, model
 
 def solve(param):

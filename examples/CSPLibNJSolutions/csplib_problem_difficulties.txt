@@ -1,3 +1,5 @@
+Task: Modify and place previous Numberjack CSPLib examples onto repo.
+
 CSPLib problems: http://www.csplib.org/Problems/
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -6,7 +8,6 @@ Format:
 [Done?][#] : [Name] - [Difficulty]
 
 Where:
-- [Done?] takes a value of 'N' if the solution is not yet finished, or 'Y' if it is.
 - [#] is the number of the problem.
 - [Name] is the title of the problem.
 - [Difficulty] is one of "Easy", "Moderate" or "Difficult", based on the impression the problem gave me.
@@ -23,100 +24,125 @@ Problem 007 is called All-Interval Series. I deemed it to be an easy problem. It
 
 Problems list:
 =-=-=-=-=-=-=-=
-N001 : Car Sequencing - Diffcult
-N002 : Template Design - Moderate
-N003 : Quasigroup Existence - Difficult
-N004 : Mystery Shopper - Difficult
-N005 : Low autocorrelation binary sequences - Difficult
-Y006 : Golomb rulers - Easy
-Y007 : All-Interval Series - Easy
-N008 : Vessel Loading - Difficult
-N009 : Perfect Square Placement - Moderate
-N010 : Social Golfer Problem - Difficult
-N011 : ACC Basketball Schedule - Difficult
-N012 : Nonogram - Moderate
-N013 : Progressive Party Problem - Difficult
-N014 : Solitaire Battleships - Moderate
-Y015 : Schur's Lemma - Easy
-N016 : Traffic Lights - Difficult
-N017 : Ramsey Numbers - Difficult
-N018 : Water Bucket Problem - Moderate
-N019 : Magic Squares and Sequences - Difficult
-N020 : Darts Tournament - Moderate
-N021 : Crossfigures - Moderate
-N022 : Bus Driver Scheduling - Difficult
-Y023 : Magic Hexagon - Easy
-Y024 : Langford's Number Problem - Easy
-Y025 : Lam's Problem - Easy
-N026 : Sports Tournament Scheduling - Difficult
-N027 : Alien Tiles Problem - Difficult
-N028 : Balanced Incomplete Block Designs - Moderate
-N029 : Prime queen attacking Problem - Difficult
-N030 : Balanced Academic Curriculum Problem (BACP) - Difficult
-N031 : Rack Configuration Problem - Moderate
-N032 : Maximum Density Still Life - Difficult 
-N033 : Word Design for DNA Computing on Surfaces - Moderate
-N034 : Warehouse Location Problem - Moderate
-N035 : Molnar's Problem - Difficult
-N036 : Fixed Length Error Correcting Codes - Moderate
-N037 : Peg Solitaire - Difficult
-N038 : Steel Mill Slab Design - Difficult
-N039 : The Rehearsal Problem - Difficult
-N040 : A Distribution Problem with Wagner-Whitin Costs  - Difficult
-Y041 : The n-Fractions Puzzle - Easy
-N042 : Diagnosis - Difficult
-N043 : Differential Diagnosis - Difficult
-N044 : Steiner triple systems - Moderate
-N045 : The Covering Array Problem - Difficult
-N046 : Meeting Scheduling - Difficult
-N047 : Supply Chain Coordinations - Difficult
-N048 : Minimum Energy Broadcast (MEB) - Difficult
-Y049 : Number Partitioning - Easy
-N050 : Diamond-free Degree Sequences - Moderate
-N051 : Tank Allocation - Difficult
-N052 : Extremal Graphs with Small Girth - Difficult
-Y054 : N-Queens - Easy
-N055 : Equidistant Frequency Permutation Arrays - Moderate
-N056 : Synchronous Optical Networking (SONET) Problem - Moderate
-Y057 : Killer Sudoku - Easy
+001 : Car Sequencing - Diffcult
+002 : Template Design - Moderate
+003 : Quasigroup Existence - Difficult
+004 : Mystery Shopper - Difficult
+005 : Low autocorrelation binary sequences - Difficult
+006 : Golomb rulers - Easy
+007 : All-Interval Series - Easy
+008 : Vessel Loading - Difficult
+009 : Perfect Square Placement - Moderate
+010 : Social Golfer Problem - Difficult
+011 : ACC Basketball Schedule - Difficult
+012 : Nonogram - Moderate
+013 : Progressive Party Problem - Difficult
+014 : Solitaire Battleships - Moderate
+015 : Schur's Lemma - Easy
+016 : Traffic Lights - Difficult
+017 : Ramsey Numbers - Difficult
+018 : Water Bucket Problem - Moderate
+019 : Magic Squares and Sequences - Difficult
+020 : Darts Tournament - Moderate
+021 : Crossfigures - Moderate
+022 : Bus Driver Scheduling - Difficult
+023 : Magic Hexagon - Easy
+024 : Langford's Number Problem - Easy
+025 : Lam's Problem - Easy
+026 : Sports Tournament Scheduling - Difficult
+027 : Alien Tiles Problem - Difficult
+028 : Balanced Incomplete Block Designs - Moderate
+029 : Prime queen attacking Problem - Difficult
+030 : Balanced Academic Curriculum Problem (BACP) - Difficult
+031 : Rack Configuration Problem - Moderate
+032 : Maximum Density Still Life - Difficult 
+033 : Word Design for DNA Computing on Surfaces - Moderate
+034 : Warehouse Location Problem - Moderate
+035 : Molnar's Problem - Difficult
+036 : Fixed Length Error Correcting Codes - Moderate
+037 : Peg Solitaire - Difficult
+038 : Steel Mill Slab Design - Difficult
+039 : The Rehearsal Problem - Difficult
+040 : A Distribution Problem with Wagner-Whitin Costs  - Difficult
+041 : The n-Fractions Puzzle - Easy
+042 : Diagnosis - Difficult
+043 : Differential Diagnosis - Difficult
+044 : Steiner triple systems - Moderate
+045 : The Covering Array Problem - Difficult
+046 : Meeting Scheduling - Difficult
+047 : Supply Chain Coordinations - Difficult
+048 : Minimum Energy Broadcast (MEB) - Difficult
+049 : Number Partitioning - Easy
+050 : Diamond-free Degree Sequences - Moderate
+051 : Tank Allocation - Difficult
+052 : Extremal Graphs with Small Girth - Difficult
+054 : N-Queens - Easy
+055 : Equidistant Frequency Permutation Arrays - Moderate
+056 : Synchronous Optical Networking (SONET) Problem - Moderate
+057 : Killer Sudoku - Easy
 
 --
 
-Difficulty groups:
-=-=-=-=-=-=-=-=-=-=
+Difficulty groups status:
+=-=-=-=-=-=-=-=-=-=-=-=-=
 
 Easy:
 =====
-006 Done
-007 Done
-015 Done
-023 Done
-024 Done
-025 Done
-041 Done
-049 Done
-054 Done
-057 Done
+006 Finished before (Numberjack examples)
+007 Finished
+015 Finished
+023 Finished
+024 Finished before (Numberjack examles)
+025 Finished
+041 Finished
+049 Finished
+054 Finished before (Numberjack examples)
+057 Finished
 
 Moderate:
 =========
-002 Not started
-009 Not started
-012 In-progress
-014 Not started
-018 Not started
-020 Not started
-021 In-progress
-028 Not started
-031 Not started
-033 Not started
-034 Not started
-036 Not started
-044 In-progress
-050 Done
-055 In-progress
-056 Not started
+002 None
+009 In-progress - for some reason it's giving unsatisfiable.
+012 Needs constraint implementation - http://sofdem.github.io/gccat/aux/pdf/consecutive_groups_of_ones.pdf
+014 None
+018 None
+020 None
+021 In-progress - inefficient model / rewrite
+028 Finished before (Numberjack examples)
+031 None
+033 None
+034 Finished before (Numberjack examples)
+036 None
+044 In-progress - should work but giving unsatisfiable
+050 Finished
+055 Finished
+056 None
 
 Difficult:
 ==========
-None started yet.
+001 None
+003 None
+004 None
+005 None
+010 None
+011 None
+013 None
+016 None
+017 None
+019 Finished 3/4 variants - last one needs constraint implementation http://sofdem.github.io/gccat/aux/pdf/alldifferent_consecutive_values.pdf
+022 None
+026 None
+027 None
+029 None
+032 None
+035 None
+037 None
+038 None
+039 None
+040 None
+043 None
+045 None
+046 None
+047 None
+048 None
+052 None

@@ -1,3 +1,5 @@
+# Stuck: Probably needs this http://sofdem.github.io/gccat/aux/pdf/consecutive_groups_of_ones.pdf
+
 # Nonogram
 
 # Nonograms are a popular puzzle where one has to shade in squares in a grid so that
