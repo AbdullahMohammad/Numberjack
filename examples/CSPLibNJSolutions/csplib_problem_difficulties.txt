@@ -105,44 +105,44 @@ Moderate:
 009 In-progress - for some reason it's giving unsatisfiable.
 012 Needs constraint implementation - http://sofdem.github.io/gccat/aux/pdf/consecutive_groups_of_ones.pdf
 014 None
-018 None
+018 None - has a model but I did not undestand it. Look into "classical planning problems"
 020 None
 021 In-progress - inefficient model / rewrite
 028 Finished before (Numberjack examples)
 031 None
-033 None
+033 None - should be easy, but I am not sure about the specification
 034 Finished before (Numberjack examples)
-036 None
+036 None - how is this a CP problem? it seems to be asking for the minimum Hamming distance between strings?
 044 In-progress - should work but giving unsatisfiable
 050 Finished
 055 Finished
-056 None
+056 In-progress - Stuck: How to constraint nodes to be on the same ring?
 
 Difficult:
 ==========
-001 None
-003 None
-004 None
-005 None
-010 None
-011 None
-013 None
-016 None
+001 In-progress - Getting unsatisfiable for some reason
+003 None - there is a model but both it and the problem description is confusing
+004 None - there is a model; but I did not really understand it
+005 None - there is a model but this is confusing
+010 None - there is a model but I do not understand the part where it assigns golfers in different groups on different weeks
+011 None - there is a model but it seems somewhat complicated; needs time
+013 None - there is a model but it's not really helping me in how I should approach the problem
+016 None - did not really understand what the solution is that we are looking for
 017 None
 019 Finished 3/4 variants - last one needs constraint implementation http://sofdem.github.io/gccat/aux/pdf/alldifferent_consecutive_values.pdf
-022 None
+022 None - did not really understand what the solution should be
 026 None
-027 None
-029 None
-032 None
-035 None
-037 None
-038 None
-039 None
-040 None
+027 None - should be possible to copy the model
+029 None - should be fairly simple, but how do we add "soft contraints"?
+032 None - should be possible to copy the models
+035 None - did not really understand what is required
+037 None - not sure how to make a "planning" model in NJ
+038 None - should be possible to copy the model
+039 None - should be fairly easy once I find out how to solve "minimization" problems in NJ
+040 None - minimization problem
 043 None
-045 None
+045 None - how to decode binary arrays into decimal numbers in NJ?
 046 None
-047 None
-048 None
-052 None
+047 None - seems complicated; needs time
+048 None - seems complicated; needs time
+052 None - not sure how to find "maximal" solutions
