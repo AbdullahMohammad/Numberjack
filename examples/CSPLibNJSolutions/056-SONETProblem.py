@@ -22,7 +22,7 @@ def get_model(N, R, pairs_data, rings_data):
 
     model = Model(
         # Ensure that nodes that need to be connected are on the same ring.
-        [Disjunction([rings[i][pair[0]] == 1 & rings[i][pair[1]] == 1
+        [Disjunction([rings[i][pair[0]] + rings[i][pair[1]] == 2
          for i in range(R)]) for pair in pairs],
 
         # Ensure that none of the rings exceed their limit.
