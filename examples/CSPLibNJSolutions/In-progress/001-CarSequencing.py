@@ -83,6 +83,6 @@ def solve(param):
         print "Timed out"
         
 if __name__ == '__main__':
-    default = {'N': 10, 'O': 5, 'C': 6, 'options': 'data/001-CarSequencingOptions.txt', 'classes': 'data/001-CarSequencingClasses.txt', 'solver': 'Mistral', 'verbose': 1}
+    default = {'N': 10, 'O': 5, 'C': 6, 'options': 'data/001-CarSequencingOptions.txt', 'classes': 'data/001-CarSequencingClasses.txt', 'solver': 'MiniSat', 'verbose': 1}
     param = input(default)
     solve(param)
