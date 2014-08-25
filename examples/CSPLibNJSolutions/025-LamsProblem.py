@@ -22,8 +22,8 @@ def get_model(N):
         [Sum(col) == 100 for col in matrix.col],
 
         # Each pair of rows must have exactly one zero in the same column.
-        [[[Sum([matrix[row1][col], matrix[row2][col]]) == 1
-            for col in range(N)]
+        [[Sum([matrix[row1][col] == 0 & matrix[row2][col] == 0
+            for col in range(N)]) == 1
             for row2 in range(row1 + 1, N)]
             for row1 in range(N)])
 
