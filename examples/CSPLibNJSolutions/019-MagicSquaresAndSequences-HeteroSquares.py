@@ -1,4 +1,4 @@
-# Magic Squares and Sequences - hettero squares variant
+# Magic Squares and Sequences - hetero squares variant
 #
 # An order n hetero square is a n by n matrix containing the
 # numbers 1 to n^2, with each row, column and main diagonal
