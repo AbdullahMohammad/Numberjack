@@ -5,6 +5,8 @@
 # column has 11 zeros, and each pair of rows must have exactly one
 # zero in the same column.
 #
+# This problem is supposed to have no solution, see link below.
+#
 # CSPLib Problem 025 - http://www.csplib.org/Problems/prob025/
 
 from Numberjack import *
