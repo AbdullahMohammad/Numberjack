@@ -40,7 +40,7 @@ def solve(param):
 
 
 if __name__ == '__main__':
-    default = {'N': 12, 'solver': 'MiniSat', 'verbose': 1}
+    default = {'N': 5, 'solver': 'MiniSat', 'verbose': 1}
     param = input(default)
     solve(param)
 
